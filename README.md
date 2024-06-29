@@ -2,7 +2,8 @@
 
 Guarda Notas é um aplicativo Flutter para salvar e gerenciar suas anotações de forma simples e eficiente. 
 
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-29 at 15 06 16](https://github.com/MarcosPereira1/guardanotas_app/assets/100098827/9f8b1203-fdb3-4f0c-9db6-7401e86df484)
+<img src="https://github.com/MarcosPereira1/guardanotas_app/assets/100098827/9f8b1203-fdb3-4f0c-9db6-7401e86df484" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-29 at 15 06 16" width="300"/>
+
 ## Funcionalidades
 
 - Adicionar novas anotações.
@@ -37,7 +38,6 @@ Para rodar este projeto localmente, siga os passos abaixo:
 ## Estrutura do Projeto
 
 O projeto segue a estrutura básica do Flutter com a separação de responsabilidades:
-
 
 - `features/keep_notes/`: Contém a funcionalidade principal do aplicativo.
 - `presentation/widgets/`: Contém widgets específicos para a apresentação.
