@@ -7,13 +7,13 @@ class NoteInputWidget extends StatefulWidget {
   const NoteInputWidget({required this.onAddNote, Key? key}) : super(key: key);
 
   @override
-  _NoteInputWidgetState createState() => _NoteInputWidgetState();
+  NoteInputWidgetState createState() => NoteInputWidgetState();
 }
 
-class _NoteInputWidgetState extends State<NoteInputWidget> {
+class NoteInputWidgetState extends State<NoteInputWidget> {
   final TextEditingController _controller = TextEditingController();
   String _note = '';
-  int _maxLength = 200;
+  final int _maxLength = 200;
 
   @override
   Widget build(BuildContext context) {
@@ -44,17 +44,20 @@ class _NoteInputWidgetState extends State<NoteInputWidget> {
         ),
         const SizedBox(height: 8.0),
         Row(
-          mainAxisAlignment: MainAxisAlignment.end, // Alinhar à direita
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(
               '${_note.length}/$_maxLength',
               style: AppTextStyles.placeholder,
             ),
-            const SizedBox(width: 20), // Espaçamento entre o contador e o botão
+            const SizedBox(width: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: AppColors.primaryText,
+                backgroundColor: AppColors.primaryText,
                 padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
               ),
               onPressed: () {
                 if (_note.isNotEmpty) {
